@@ -1,0 +1,33 @@
+@import '../../styles/variables';
+
+.radialChartContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  .percentage {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+    color: $lime-green;
+  }
+
+  .multiLineText {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+
+    span {
+      display: block;
+    }
+  }
+}
+
+.chartInner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

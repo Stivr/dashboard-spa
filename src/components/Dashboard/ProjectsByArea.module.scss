@@ -1,0 +1,54 @@
+@import '../../styles/variables';
+
+.projectsByAreaContainer {
+  background-color: $white;
+
+  .title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    padding: 16px;
+    text-align: center;
+  }
+
+  .areaTable {
+    margin-top: 0;
+    padding: 0;
+    background-color: $beige;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .areaRow {
+    display: flex;
+    padding: 25px 50px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid $light-purple;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .areaName {
+    font-size: 18px;
+    font-weight: 600;
+    color: $grey;
+    flex: 3;
+    text-transform: capitalize;
+
+    &:hover {
+      color: $dark-purple;
+    }
+  }
+
+  .areaCount {
+    font-size: 18px;
+    font-weight: bold;
+    flex: 1;
+    text-align: right;
+
+    &:hover {
+      color: $dark-purple;
+    }
+  }
+}

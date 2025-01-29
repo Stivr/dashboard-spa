@@ -1,0 +1,61 @@
+@import '../../styles/variables';
+
+.budgetContainer {
+  display: grid;
+  grid-template-columns: 1fr 1.68fr;
+  gap: 20px;
+  color: $dark-purple;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    bottom: -20px;
+    left: 37.3%;
+    width: 1px;
+    background-color: $light-purple;
+  }
+
+  .summarySection {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-right: 20px;
+
+    h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 16px;
+      text-align: left;
+    }
+
+    .summaryItem {
+      font-size: 18px;
+
+      .value {
+        font-size: 36px;
+        font-weight: 700;
+        color: $light-purple;
+      }
+    }
+  }
+
+  .breakdownSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding-left: 20px;
+
+    .breakdownItem {
+      font-size: 18px;
+
+      .amount {
+        color: $light-purple;
+        font-size: 22px;
+        font-weight: 700;
+      }
+    }
+  }
+}

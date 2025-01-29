@@ -1,0 +1,48 @@
+@import '../../styles/variables';
+
+.statusOverviewContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: $dark-purple;
+  border-radius: 20px;
+  margin-left: 80px;
+}
+
+.statusText {
+  flex: 1;
+}
+
+.statusList {
+  font-size: 18px;
+
+  h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  p {
+    margin: 12px 0;
+    margin-left: 40px;
+
+    span {
+      font-size: 24px;;
+      font-weight: bold;
+
+      &[data-status="completed"] {
+        color: $dark-green;
+      }
+      &[data-status="not-started"] {
+        color: $grey;
+      }
+      &[data-status="in-progress"] {
+        color: $orange;
+      }
+      &[data-status="on-hold"] {
+        color: $red;
+      }
+    }
+  }
+}

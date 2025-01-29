@@ -1,0 +1,13 @@
+@import 'variables';
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: $dark-purple;
+  font-family: $base-font;
+  color: $dark-purple;
+}
+
+* {
+  box-sizing: border-box;
+}

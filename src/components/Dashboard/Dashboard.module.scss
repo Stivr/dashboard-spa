@@ -1,0 +1,116 @@
+@import '../../styles/variables';
+
+.dashboardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.titleSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 700;
+  color: $white;
+  margin: 0;
+}
+
+.logo {
+  height: 80px;
+  width: auto;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1.31fr;
+  gap: 40px;
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.rightSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: $white;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.statusOverviewWrapper {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+
+.circleWrapper {
+  position: absolute;
+  top: -16px;
+  left: 0px;
+  width: 247px;
+  height: 247px;
+  border-radius: 50%;
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.statusOverview {
+  flex: 1;
+  background-color: $white;
+  margin-left: 135px;
+  padding: 20px;
+  padding-bottom: 0;
+  border-radius: 20px;
+  z-index: 0;
+}
+
+.projectsByArea {
+  background-color: $white;
+  color: $dark-purple;
+  padding: 20px;
+  padding-top: 0;
+  border-radius: 20px;
+}
+
+.priorityProjects {
+  background-color: $beige;
+  color: $dark-purple;
+  padding: 20px;
+  padding-top: 0;
+  border-radius: 20px;
+}
+
+.budget,
+.projectSize,
+.priorityProjects {
+  background-color: $beige;
+}
+
+.budget,
+.projectSize,
+.priorityProjects
+.projectsByArea {
+  color: $dark-purple;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.projectSize {
+  padding-bottom: 0;
+}

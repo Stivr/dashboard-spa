@@ -1,0 +1,54 @@
+@import '../../styles/variables';
+
+.priorityProjectsContainer {
+  background-color: $beige;
+  border-radius: 20px;
+  color: $dark-purple;
+
+  h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+}
+
+.priorityList {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.priorityItem {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 700;
+
+  &.high {
+    background-color: $red;
+    color: $white;
+  }
+
+  &.medium {
+    background-color: $orange;
+    color: $white;
+  }
+
+  &.low {
+    background-color: $lime-green;
+    color: $dark-purple;
+  }
+}
+
+.priorityLabel {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.priorityCount {
+  font-size: 24px;
+}
